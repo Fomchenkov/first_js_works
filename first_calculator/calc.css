@@ -1,0 +1,39 @@
+body{
+	background: #5D84F6;
+	margin: 0;
+}
+
+#calculator{
+	border: #57E9A5 solid 2px; 
+	background: #57E9A5;
+	width: 204px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+#plus, #minus, #umn, #delen{
+	width: 100px;
+	height: 30px;
+	font-size: 25px;
+}
+
+#cdelete{
+	width: 204px;
+	height: 40px;
+	font-size: 25px;
+}
+
+#text1, #text2{
+	width: 200px;
+	height: 50px;
+	font-size: 50px;
+}
+
+#res{
+	width: 200px;
+	height: 50px;
+	background-color: #D6CECE;
+	font-size: 50px;
+	color: black;	
+}
