@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript develop</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		/*
+
+			Developed by:
+			<h1>Фомченков Вячеслав</h1>
+			12.05.16
+
+		*/
+
+		(function (){
+
+			(function init(){
+				divBuilder();
+				createrEl();
+				createInpit();
+				createInputText();
+				documentKeyDown();
+				clientXY();
+			})();
+
+			function divBuilder(){
+				var div1 = document.createElement('div'),
+					div2 = document.createElement('div'),
+					div3 = document.createElement('div');
+				document.body.appendChild(div1);
+				document.body.appendChild(div2);
+				document.body.appendChild(div3);
+			};
+
+			function clientXY() {
+				document.addEventListener('mousemove', function(){
+					document.body.children[3].innerHTML = event.clientX + ' : ' + event.clientY;
+				});
+			};
+		
+			function createInputText(){
+				var inp = document.createElement('input');
+				inp.id = 'inptext';
+				inp.type = 'text';
+				inp.value = 'blur';
+				inp.setAttribute('color', 'red');
+				inp.addEventListener('focus', function(){
+					inp.value = '';
+				});
+				inp.addEventListener('blur', function(){
+					inp.value = 'blur';
+				});
+				document.body.children[1].appendChild(inp);
+			};
+
+			function createInpit(){
+				var input = document.createElement('input');
+				input.value = 'Click here!';
+				input.id = 'inp';
+				input.style.color = 'red';
+				input.style.borderRadius = '10px';
+				input.type = 'button';
+				input.className = 'class';
+				input.onclick = 'inpHandler()';
+				input.addEventListener('click', function(){alert('clicked');});
+				document.body.children[2].appendChild(input);
+			};
+
+			function createrEl() {
+				var inp = document.createElement('div');
+				inp.innerHTML = 'Element' + ' ' + 'created';
+				document.body.appendChild(inp);
+			};
+
+			function documentKeyDown(){
+				i = 0;
+				document.addEventListener('keydown', function(){
+					var div = document.createElement('div');
+					div.innerHTML = 'Key pressed #' + i++;
+					document.body.appendChild(div);
+				});
+			};
+
+		})();
+	</script>
+</body>
+</html>
