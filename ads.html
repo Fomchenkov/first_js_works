@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ADS</title>
+	<meta charset="utf-8">
+
+	<script defer>
+
+	window.addEventListener('load', function () {
+		divStyle('div');
+		ads(100, 100, 'div1');
+	})
+
+	//ПЕРЕДАЕМ ИМЯ ТЕГА
+	function divStyle (block) {
+		document.getElementsByTagName(block)[0].style.color='red';
+		document.getElementsByTagName(block)[1].style.color='green';
+		document.getElementsByTagName(block)[2].style.color='blue';
+		document.getElementsByTagName(block)[3].style.color='yellow';
+	}
+
+	//ПЕРЕДАЕМ ШИРИНУ and ВЫСОТУ БЛОКА РЕКЛАМЫ И БЛОК, КУДА ДОБАВИТЬ РЕКЛАМУ
+	function ads (adswidth, adsheight, adsblock) {
+
+		if ((adswidth > 500) || (adsheight > 500)) {
+			alert ('Error');
+		} else {
+
+			var ads = document.createElement('div');
+			ads.id = 'ads';
+			ads.innerHTML = 'My ADS';
+			ads.style.color='red';
+			ads.style.backgroundColor = 'gray';
+			ads.style.width = adswidth + 'px';
+			ads.style.height = adsheight + 'px';
+			document.getElementById(adsblock).appendChild(ads);
+
+		}
+	}
+
+	</script>
+
+</head>
+<body>
+
+	<div id="div1">lorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndg<br><br>
+	</div>
+
+	<div id="div2">lorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndg<br><br>
+	</div>
+
+	<div id="div3">lorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndg<br><br>
+	</div>
+
+	<div id="div4">lorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndglorem sdlhgfdsjkhfd dfgkb hdfhbg nhdfh gh fhdfhb bh
+	 sfhfhd dh ndhg hndg hnh
+	  fd hjdh jfgnjhfdngj hndg<br><br>
+	</div>
+
+</body>
+</html>
